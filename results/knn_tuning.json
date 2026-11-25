@@ -1,0 +1,58 @@
+[
+  {
+    "include_seen": false,
+    "decay": 0.5,
+    "boost": 1.0,
+    "val_NDCG@10": 0.11415212298683652,
+    "val_HR@10": 0.19497396206583537
+  },
+  {
+    "include_seen": false,
+    "decay": 0.8,
+    "boost": 1.0,
+    "val_NDCG@10": 0.11382372783295612,
+    "val_HR@10": 0.19678945105346138
+  },
+  {
+    "include_seen": true,
+    "decay": 0.5,
+    "boost": 0.5,
+    "val_NDCG@10": 0.2752360222738689,
+    "val_HR@10": 0.46228082748077015
+  },
+  {
+    "include_seen": true,
+    "decay": 0.5,
+    "boost": 1.0,
+    "val_NDCG@10": 0.30100117715203506,
+    "val_HR@10": 0.47527590655009316
+  },
+  {
+    "include_seen": true,
+    "decay": 0.5,
+    "boost": 2.0,
+    "val_NDCG@10": 0.3071150309786351,
+    "val_HR@10": 0.4813912378768334
+  },
+  {
+    "include_seen": true,
+    "decay": 0.8,
+    "boost": 0.5,
+    "val_NDCG@10": 0.2753712399136855,
+    "val_HR@10": 0.4723615689646935
+  },
+  {
+    "include_seen": true,
+    "decay": 0.8,
+    "boost": 1.0,
+    "val_NDCG@10": 0.30436956128610876,
+    "val_HR@10": 0.48547608809899195
+  },
+  {
+    "include_seen": true,
+    "decay": 0.8,
+    "boost": 2.0,
+    "val_NDCG@10": 0.3104616649189971,
+    "val_HR@10": 0.4887009698533276
+  }
+]

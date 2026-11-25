@@ -1,0 +1,56 @@
+ablation,model,reference,metric,difference,low,high,p,verdict
+Seen products,"Item-KNN, new products only",Item-KNN,HR@10,-0.2871894716088328,-0.29395713089667,-0.2802905189366416,0.0,lower
+Seen products,"Item-KNN, new products only",Item-KNN,NDCG@10,-0.19347403167312344,-0.19912479011176765,-0.18817450501177346,0.0,lower
+Seen products,"Item-KNN, new products only",Item-KNN,Reward@10,-0.10923205835962144,-0.1127606567336719,-0.10579703975051907,0.0,lower
+Seen products,"Item-KNN, new products only",Item-KNN,Purchase HR@10,-0.8609406952965235,-0.8994117157964754,-0.8166012714261123,0.0,lower
+Seen products,"Item-KNN, new products only",Item-KNN,Purchase NDCG@10,-0.7483727659150791,-0.7886444111018273,-0.7049718407399289,0.0,lower
+Repeat term,GRU without repeat term,GRU,HR@10,-0.050004929022082034,-0.0555569848095648,-0.044135062252881746,0.0,lower
+Repeat term,GRU without repeat term,GRU,NDCG@10,-0.08041504243745423,-0.0845626366975994,-0.07617275394272754,0.0,lower
+Repeat term,GRU without repeat term,GRU,Reward@10,-0.030101537854889587,-0.032451726739001485,-0.027702513796309027,0.0,lower
+Repeat term,GRU without repeat term,GRU,Purchase HR@10,-0.3803680981595093,-0.4108562644587848,-0.3502106487756393,0.0,lower
+Repeat term,GRU without repeat term,GRU,Purchase NDCG@10,-0.37724848302748604,-0.40647737171859905,-0.35095668566026716,0.0,lower
+Discount factor,SQN γ=0 (supervised head),SQN γ=0.5 (supervised head),HR@10,0.002538446372239711,0.001008230228735442,0.004090552778138396,0.002,higher
+Discount factor,SQN γ=0 (supervised head),SQN γ=0.5 (supervised head),NDCG@10,0.0014833164702851565,0.00045203675851861473,0.0024069754070169852,0.0,higher
+Discount factor,SQN γ=0 (supervised head),SQN γ=0.5 (supervised head),Reward@10,0.0007048501577286981,0.00011006811479745555,0.0012854715736168893,0.024,higher
+Discount factor,SQN γ=0 (supervised head),SQN γ=0.5 (supervised head),Purchase HR@10,0.0068166325835038455,-0.0034538814658991723,0.017374083189928047,0.236,no clear difference
+Discount factor,SQN γ=0 (supervised head),SQN γ=0.5 (supervised head),Purchase NDCG@10,0.0058918971104561235,-0.0007925740696698601,0.012665218379390305,0.092,no clear difference
+Discount factor,SQN γ=0.9 (supervised head),SQN γ=0.5 (supervised head),HR@10,-0.015723580441640406,-0.01778112145660869,-0.013825873988636054,0.0,lower
+Discount factor,SQN γ=0.9 (supervised head),SQN γ=0.5 (supervised head),NDCG@10,-0.0065089530048411115,-0.007700379227586675,-0.005308288908518548,0.0,lower
+Discount factor,SQN γ=0.9 (supervised head),SQN γ=0.5 (supervised head),Reward@10,-0.0035686119873817035,-0.004308542371211853,-0.0028875919876466183,0.0,lower
+Discount factor,SQN γ=0.9 (supervised head),SQN γ=0.5 (supervised head),Purchase HR@10,-0.0027266530334014716,-0.014122287857548094,0.007391499930306499,0.662,no clear difference
+Discount factor,SQN γ=0.9 (supervised head),SQN γ=0.5 (supervised head),Purchase NDCG@10,-0.0005345263779696907,-0.007970286658989394,0.00683092644396145,0.938,no clear difference
+Discount factor,SQN γ=0 (combined),SQN γ=0.5 (combined),HR@10,0.006432373817034709,0.004649630791765727,0.00819434454384588,0.0,higher
+Discount factor,SQN γ=0 (combined),SQN γ=0.5 (combined),NDCG@10,0.0044960364966599164,0.00341291512663808,0.005575604860156966,0.0,higher
+Discount factor,SQN γ=0 (combined),SQN γ=0.5 (combined),Reward@10,0.00225256309148264,0.0016471359542077346,0.002933700220211281,0.0,higher
+Discount factor,SQN γ=0 (combined),SQN γ=0.5 (combined),Purchase HR@10,0.012951601908657073,0.00277571877807726,0.02486277514695024,0.01,higher
+Discount factor,SQN γ=0 (combined),SQN γ=0.5 (combined),Purchase NDCG@10,0.011854859324823996,0.004440258764198316,0.01915167030253978,0.002,higher
+Discount factor,SQN γ=0.9 (combined),SQN γ=0.5 (combined),HR@10,-0.02033221608832808,-0.022513354581300788,-0.018172907284329437,0.0,lower
+Discount factor,SQN γ=0.9 (combined),SQN γ=0.5 (combined),NDCG@10,-0.009054343001237808,-0.010391534615740246,-0.00771953959749089,0.0,lower
+Discount factor,SQN γ=0.9 (combined),SQN γ=0.5 (combined),Reward@10,-0.005022673501577285,-0.0057966989239517045,-0.004242066276086822,0.0,lower
+Discount factor,SQN γ=0.9 (combined),SQN γ=0.5 (combined),Purchase HR@10,-0.012951601908657073,-0.024410986545805265,-0.0020753957880457244,0.03,lower
+Discount factor,SQN γ=0.9 (combined),SQN γ=0.5 (combined),Purchase NDCG@10,-0.011148079924356513,-0.01930791713552877,-0.0023296022763697973,0.02,lower
+Reward weights,"SQN, equal rewards (supervised head)",SQN γ=0.5 (supervised head),HR@10,-0.0032531545741324996,-0.005281795004221856,-0.0011803200780024323,0.002,lower
+Reward weights,"SQN, equal rewards (supervised head)",SQN γ=0.5 (supervised head),NDCG@10,-0.0009289402481371667,-0.002250120015933434,0.0004056994530024934,0.18,no clear difference
+Reward weights,"SQN, equal rewards (supervised head)",SQN γ=0.5 (supervised head),Reward@10,-9.858044164037794e-05,-0.0008699247003445387,0.0006348503593276514,0.756,no clear difference
+Reward weights,"SQN, equal rewards (supervised head)",SQN γ=0.5 (supervised head),Purchase HR@10,-0.002044989775051076,-0.014887443351529459,0.009975578203262093,0.736,no clear difference
+Reward weights,"SQN, equal rewards (supervised head)",SQN γ=0.5 (supervised head),Purchase NDCG@10,-0.002288729869745487,-0.012603183793364916,0.00794973167548206,0.666,no clear difference
+Reward weights,"SQN, equal rewards (combined)",SQN γ=0.5 (combined),HR@10,-0.007368888012618313,-0.00930828626047447,-0.005237865607280173,0.0,lower
+Reward weights,"SQN, equal rewards (combined)",SQN γ=0.5 (combined),NDCG@10,-0.0037594191620419215,-0.005153259314162752,-0.0023571126367448155,0.0,lower
+Reward weights,"SQN, equal rewards (combined)",SQN γ=0.5 (combined),Reward@10,-0.0016906545741325052,-0.0024343820753753376,-0.0009241177677441347,0.0,lower
+Reward weights,"SQN, equal rewards (combined)",SQN γ=0.5 (combined),Purchase HR@10,-0.006134969325153339,-0.01874560652487383,0.00706952546794654,0.364,no clear difference
+Reward weights,"SQN, equal rewards (combined)",SQN γ=0.5 (combined),Purchase NDCG@10,-0.012237434911185452,-0.02271223927150689,-0.0012136337175777865,0.026,lower
+Reward weights,"LinUCB, equal rewards (1, 1, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",HR@10,0.014146293375394303,0.011692157662650327,0.016402939101161428,0.0,higher
+Reward weights,"LinUCB, equal rewards (1, 1, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",NDCG@10,0.006499268216039189,0.0054613245431413045,0.007405675706290971,0.0,higher
+Reward weights,"LinUCB, equal rewards (1, 1, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",Reward@10,0.0034700315457413533,0.0028704489914050148,0.004021173117674825,0.0,higher
+Reward weights,"LinUCB, equal rewards (1, 1, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",Purchase HR@10,0.00886162235855481,0.0,0.017337689703921393,0.058,no clear difference
+Reward weights,"LinUCB, equal rewards (1, 1, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",Purchase NDCG@10,-0.003206388756406109,-0.007082382327072148,0.0007289981251952178,0.104,no clear difference
+Reward weights,"LinUCB, steeper rewards (0.1, 0.5, 2.0)","LinUCB, default rewards (0.2, 0.6, 1.0)",HR@10,-0.1284256703470032,-0.13302729707792207,-0.12426677375452529,0.0,lower
+Reward weights,"LinUCB, steeper rewards (0.1, 0.5, 2.0)","LinUCB, default rewards (0.2, 0.6, 1.0)",NDCG@10,-0.07657968477854352,-0.07927765118736327,-0.07399831323552669,0.0,lower
+Reward weights,"LinUCB, steeper rewards (0.1, 0.5, 2.0)","LinUCB, default rewards (0.2, 0.6, 1.0)",Reward@10,-0.027430007886435334,-0.028419425522612094,-0.026421273052015422,0.0,lower
+Reward weights,"LinUCB, steeper rewards (0.1, 0.5, 2.0)","LinUCB, default rewards (0.2, 0.6, 1.0)",Purchase HR@10,-0.017723244717109732,-0.025625848807285558,-0.009708233950347698,0.0,lower
+Reward weights,"LinUCB, steeper rewards (0.1, 0.5, 2.0)","LinUCB, default rewards (0.2, 0.6, 1.0)",Purchase NDCG@10,-0.006247337476368076,-0.010928152225147064,-0.001730041728246476,0.002,lower
+Reward weights,"LinUCB, purchases only (0, 0, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",HR@10,-0.24226143533123032,-0.24855616734597785,-0.23631969302072836,0.0,lower
+Reward weights,"LinUCB, purchases only (0, 0, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",NDCG@10,-0.12578486419873325,-0.12940262390174334,-0.12257636208454181,0.0,lower
+Reward weights,"LinUCB, purchases only (0, 0, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",Reward@10,-0.05071963722397477,-0.05202075103932663,-0.04937043046906758,0.0,lower
+Reward weights,"LinUCB, purchases only (0, 0, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",Purchase HR@10,-0.00613496932515345,-0.014218491445096026,0.0019175838424517154,0.166,no clear difference
+Reward weights,"LinUCB, purchases only (0, 0, 1)","LinUCB, default rewards (0.2, 0.6, 1.0)",Purchase NDCG@10,0.005614622267159586,-8.598499018116748e-05,0.011650548279976483,0.056,no clear difference

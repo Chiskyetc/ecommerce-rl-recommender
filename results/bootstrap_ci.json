@@ -1,0 +1,8 @@
+{
+  "resamples": 1000,
+  "unit": "test session",
+  "sessions": 10591,
+  "transitions": 40576,
+  "purchase_transitions": 1467,
+  "seed": 42
+}

@@ -1,0 +1,55 @@
+{
+  "online_val_reward_per_step": {
+    "LinUCB": 0.1563757210969925,
+    "Linear Thompson sampling": 0.152352973818779,
+    "Epsilon-greedy (0.1)": 0.1438058316707611,
+    "Item-KNN (fixed)": 0.1562562733888626,
+    "Random from shortlist": 0.03635755553841591
+  },
+  "test_candidate_recall@50": 0.6117409305993691,
+  "feature_weights": {
+    "LinUCB": {
+      "bias": -0.0181364689741772,
+      "knn_score": 0.023336172048414205,
+      "knn_rank": 0.009137536498473986,
+      "in_session": -0.16939852326817828,
+      "recency": 0.2006501234872049,
+      "carted_in_session": 0.06870138903619835,
+      "bought_in_session": 0.03804638163462326,
+      "log_popularity": 0.0064188277807972205,
+      "conversion_rate": 0.019801946874174914,
+      "same_category": 0.00404814677034121,
+      "same_parent": 0.004827149477106052,
+      "in_session_x_carted": 0.06870138903609194
+    },
+    "Linear Thompson sampling": {
+      "bias": -0.01535152864326414,
+      "knn_score": 0.02177401002857282,
+      "knn_rank": 0.007644255021288293,
+      "in_session": -0.1991692660693518,
+      "recency": 0.2328574596894626,
+      "carted_in_session": 0.07026562182775176,
+      "bought_in_session": 0.037467392736641236,
+      "log_popularity": 0.005477879320627432,
+      "conversion_rate": 0.019348661188387434,
+      "same_category": 0.003959472448399282,
+      "same_parent": 0.0039454147247925675,
+      "in_session_x_carted": 0.07026562182787044
+    },
+    "Epsilon-greedy (0.1)": {
+      "bias": -0.011064986199316507,
+      "knn_score": 0.023320867478009433,
+      "knn_rank": 0.004508654993681582,
+      "in_session": -0.17345567030259534,
+      "recency": 0.2050861512443003,
+      "carted_in_session": 0.06895849190651063,
+      "bought_in_session": 0.03531959002847257,
+      "log_popularity": 0.005092055821504848,
+      "conversion_rate": 0.015163639788872502,
+      "same_category": 0.0038677471440439204,
+      "same_parent": 0.002666614539848733,
+      "in_session_x_carted": 0.06895849190650183
+    }
+  },
+  "env_check_linucb_reward_per_step": 0.1463897131552915
+}

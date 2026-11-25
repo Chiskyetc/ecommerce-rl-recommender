@@ -1,0 +1,61 @@
+{
+  "online_val_reward_per_step": {
+    "LinUCB": 0.15381012856960297,
+    "Linear Thompson sampling": 0.14862167835235596,
+    "Epsilon-greedy (0.1)": 0.14007455110549927,
+    "Item-KNN (fixed)": 0.1562562733888626,
+    "Random from shortlist": 0.03635755553841591
+  },
+  "test_candidate_recall@50": 0.6117409305993691,
+  "feature_weights": {
+    "LinUCB": {
+      "bias": -0.018073178211113927,
+      "knn_score": 0.027996054385636723,
+      "knn_rank": 0.00447405268899991,
+      "in_session": -0.18960185054617487,
+      "recency": 0.1818074174967907,
+      "carted_in_session": 0.06762286902678485,
+      "bought_in_session": 0.04399080348864544,
+      "log_popularity": -0.0017602452504725807,
+      "conversion_rate": 0.01990133536371319,
+      "same_category": 0.004642223746885453,
+      "same_parent": 0.004352180542938592,
+      "in_session_x_carted": 0.06762286902689746,
+      "gru_prob": 0.08189096406209914,
+      "gru_rank": 0.008503554724264673
+    },
+    "Linear Thompson sampling": {
+      "bias": -0.01395923993088588,
+      "knn_score": 0.024717422570888777,
+      "knn_rank": 0.0036869028574691917,
+      "in_session": -0.25032471636436204,
+      "recency": 0.24366166374696338,
+      "carted_in_session": 0.0708616525754831,
+      "bought_in_session": 0.041364467745695035,
+      "log_popularity": -0.0017463435869972677,
+      "conversion_rate": 0.018285594631553118,
+      "same_category": 0.004396401096829369,
+      "same_parent": 0.003289727618403578,
+      "in_session_x_carted": 0.07086165257546613,
+      "gru_prob": 0.08760083725776266,
+      "gru_rank": 0.0062873181237181885
+    },
+    "Epsilon-greedy (0.1)": {
+      "bias": -0.010119080949164652,
+      "knn_score": 0.02603536280751515,
+      "knn_rank": 0.0020752088267217417,
+      "in_session": -0.20342205409294412,
+      "recency": 0.1961916306025498,
+      "carted_in_session": 0.06836593252265243,
+      "bought_in_session": 0.04116405004517248,
+      "log_popularity": -0.0013474156501138146,
+      "conversion_rate": 0.014393671466310626,
+      "same_category": 0.005017189463572825,
+      "same_parent": 0.0013742274558444564,
+      "in_session_x_carted": 0.06836593252276649,
+      "gru_prob": 0.08474522972400989,
+      "gru_rank": 0.004533112351249646
+    }
+  },
+  "env_check_linucb_reward_per_step": 0.14500494559841717
+}

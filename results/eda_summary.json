@@ -1,0 +1,9 @@
+{
+  "raw_view_to_cart_ratio": 38.42831592915248,
+  "raw_visitors_single_event": 0.7115474786513022,
+  "clean_session_len_median": 4.0,
+  "clean_session_len_mean": 5.245296236989591,
+  "train_top20pct_item_share": 57.626552083796135,
+  "sessions_with_cart": 0.23333212024164787,
+  "sessions_with_purchase": 0.09635890530606303
+}

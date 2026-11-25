@@ -1,0 +1,324 @@
+{
+  "selection": "rule-based, seed 42, sessions of 2-5 prior events",
+  "patterns": {
+    "A": {
+      "title": "Buying a product already in the cart",
+      "share_of_test": 0.028637618296529967,
+      "count": 1162,
+      "hit_rate_top10": {
+        "Item-KNN": 0.9862306368330465,
+        "LinUCB": 0.9931153184165232,
+        "GRU": 0.9432013769363167,
+        "LinUCB + GRU": 0.9905335628227194
+      },
+      "ranked_first": {
+        "Item-KNN": 0.7211703958691911,
+        "LinUCB": 0.8769363166953529,
+        "GRU": 0.7409638554216867,
+        "LinUCB + GRU": 0.8674698795180723
+      },
+      "example": {
+        "history": [
+          {
+            "product": "#69799",
+            "category": "242",
+            "action": "added to cart"
+          },
+          {
+            "product": "#69799",
+            "category": "242",
+            "action": "viewed"
+          },
+          {
+            "product": "#83155",
+            "category": "242",
+            "action": "viewed"
+          },
+          {
+            "product": "#83155",
+            "category": "242",
+            "action": "viewed"
+          },
+          {
+            "product": "#292315",
+            "category": "1480",
+            "action": "viewed"
+          }
+        ],
+        "next": {
+          "product": "#69799",
+          "category": "242",
+          "action": "purchased"
+        },
+        "models": {
+          "Item-KNN": {
+            "rank": 4,
+            "top3": [
+              "#292315 (cat 1480)",
+              "#83155 (cat 242)",
+              "#1614 (cat 242)"
+            ]
+          },
+          "LinUCB": {
+            "rank": 1,
+            "top3": [
+              "#69799 (cat 242)",
+              "#292315 (cat 1480)",
+              "#83155 (cat 242)"
+            ]
+          },
+          "GRU": {
+            "rank": 2,
+            "top3": [
+              "#83155 (cat 242)",
+              "#69799 (cat 242)",
+              "#270492 (cat 830)"
+            ]
+          },
+          "LinUCB + GRU": {
+            "rank": 1,
+            "top3": [
+              "#69799 (cat 242)",
+              "#83155 (cat 242)",
+              "#292315 (cat 1480)"
+            ]
+          }
+        },
+        "pool_size": 82
+      }
+    },
+    "B": {
+      "title": "Moving on to a new product",
+      "share_of_test": 0.2890132097791798,
+      "count": 11727,
+      "hit_rate_top10": {
+        "Item-KNN": 0.5258804468320969,
+        "LinUCB": 0.6156732327108383,
+        "GRU": 0.16850004263665047,
+        "LinUCB + GRU": 0.6284642278502601
+      },
+      "ranked_first": {
+        "Item-KNN": 0.0,
+        "LinUCB": 0.0,
+        "GRU": 0.01696938688496632,
+        "LinUCB + GRU": 0.013558454847787157
+      },
+      "example": {
+        "history": [
+          {
+            "product": "#152198",
+            "category": "84",
+            "action": "viewed"
+          },
+          {
+            "product": "#6831",
+            "category": "84",
+            "action": "viewed"
+          },
+          {
+            "product": "#328971",
+            "category": "84",
+            "action": "viewed"
+          },
+          {
+            "product": "#159979",
+            "category": "84",
+            "action": "viewed"
+          }
+        ],
+        "next": {
+          "product": "#118958",
+          "category": "84",
+          "action": "viewed"
+        },
+        "models": {
+          "Item-KNN": {
+            "rank": 5,
+            "top3": [
+              "#159979 (cat 84)",
+              "#328971 (cat 84)",
+              "#6831 (cat 84)"
+            ]
+          },
+          "LinUCB": {
+            "rank": 4,
+            "top3": [
+              "#159979 (cat 84)",
+              "#328971 (cat 84)",
+              "#6831 (cat 84)"
+            ]
+          },
+          "GRU": {
+            "rank": 0,
+            "top3": [
+              "#6831 (cat 84)",
+              "#159979 (cat 84)",
+              "#152198 (cat 84)"
+            ]
+          },
+          "LinUCB + GRU": {
+            "rank": 3,
+            "top3": [
+              "#159979 (cat 84)",
+              "#6831 (cat 84)",
+              "#118958 (cat 84)"
+            ]
+          }
+        },
+        "pool_size": 540
+      }
+    },
+    "C": {
+      "title": "Returning to an earlier product",
+      "share_of_test": 0.2154968454258675,
+      "count": 8744,
+      "hit_rate_top10": {
+        "Item-KNN": 0.994053064958829,
+        "LinUCB": 0.8737419945105215,
+        "GRU": 0.9142268984446478,
+        "LinUCB + GRU": 0.7886550777676121
+      },
+      "ranked_first": {
+        "Item-KNN": 0.18801463860933212,
+        "LinUCB": 0.20253888380603843,
+        "GRU": 0.5909194876486734,
+        "LinUCB + GRU": 0.5648444647758463
+      },
+      "example": {
+        "history": [
+          {
+            "product": "#113155",
+            "category": "1233",
+            "action": "viewed"
+          },
+          {
+            "product": "#202843",
+            "category": "1233",
+            "action": "viewed"
+          },
+          {
+            "product": "#113155",
+            "category": "1233",
+            "action": "viewed"
+          },
+          {
+            "product": "#196856",
+            "category": "1233",
+            "action": "viewed"
+          }
+        ],
+        "next": {
+          "product": "#113155",
+          "category": "1233",
+          "action": "viewed"
+        },
+        "models": {
+          "Item-KNN": {
+            "rank": 2,
+            "top3": [
+              "#196856 (cat 1233)",
+              "#113155 (cat 1233)",
+              "#202843 (cat 1233)"
+            ]
+          },
+          "LinUCB": {
+            "rank": 2,
+            "top3": [
+              "#196856 (cat 1233)",
+              "#113155 (cat 1233)",
+              "#199931 (cat 1233)"
+            ]
+          },
+          "GRU": {
+            "rank": 1,
+            "top3": [
+              "#113155 (cat 1233)",
+              "#202843 (cat 1233)",
+              "#408907 (cat 1173)"
+            ]
+          },
+          "LinUCB + GRU": {
+            "rank": 1,
+            "top3": [
+              "#113155 (cat 1233)",
+              "#196856 (cat 1233)",
+              "#216701 (cat 1233)"
+            ]
+          }
+        },
+        "pool_size": 5715
+      }
+    },
+    "D": {
+      "title": "A next product no model can reach",
+      "share_of_test": 0.38825906940063093,
+      "count": 15754,
+      "hit_rate_top10": {
+        "Item-KNN": 0.0,
+        "LinUCB": 0.0,
+        "GRU": 0.005014599466802082,
+        "LinUCB + GRU": 0.0
+      },
+      "ranked_first": {
+        "Item-KNN": 0.0,
+        "LinUCB": 0.0,
+        "GRU": 6.347594261774788e-05,
+        "LinUCB + GRU": 0.0
+      },
+      "example": {
+        "history": [
+          {
+            "product": "#267196",
+            "category": "1196",
+            "action": "viewed"
+          },
+          {
+            "product": "#234618",
+            "category": "1324",
+            "action": "added to cart"
+          }
+        ],
+        "next": {
+          "product": "#465058",
+          "category": "1324",
+          "action": "viewed"
+        },
+        "models": {
+          "Item-KNN": {
+            "rank": 0,
+            "top3": [
+              "#234618 (cat 1324)",
+              "#267196 (cat 1196)",
+              "#273544 (cat 1324)"
+            ]
+          },
+          "LinUCB": {
+            "rank": 0,
+            "top3": [
+              "#234618 (cat 1324)",
+              "#267196 (cat 1196)",
+              "#273544 (cat 1324)"
+            ]
+          },
+          "GRU": {
+            "rank": 0,
+            "top3": [
+              "#234618 (cat 1324)",
+              "#267196 (cat 1196)",
+              "#462988 (cat 414)"
+            ]
+          },
+          "LinUCB + GRU": {
+            "rank": 0,
+            "top3": [
+              "#234618 (cat 1324)",
+              "#267196 (cat 1196)",
+              "#273544 (cat 1324)"
+            ]
+          }
+        },
+        "pool_size": 7034
+      }
+    }
+  }
+}
