@@ -1,5 +1,4 @@
 data/raw/
-data/processed/
 data/feedback.csv
 logs/
 __pycache__/

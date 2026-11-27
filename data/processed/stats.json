@@ -1,0 +1,31 @@
+{
+  "raw_events": 2755641,
+  "raw_visitors": 1407580,
+  "raw_items": 235061,
+  "events": 576521,
+  "sessions": 109912,
+  "items": 30856,
+  "val_start": "2015-08-14 22:35:53.353000",
+  "test_start": "2015-08-31 18:58:29.187000",
+  "train": {
+    "sessions": 88500,
+    "events": 472671,
+    "views": 428013,
+    "addtocart": 32238,
+    "transactions": 12420
+  },
+  "val": {
+    "sessions": 10821,
+    "events": 52683,
+    "views": 46845,
+    "addtocart": 4219,
+    "transactions": 1619
+  },
+  "test": {
+    "sessions": 10591,
+    "events": 51167,
+    "views": 45836,
+    "addtocart": 3847,
+    "transactions": 1484
+  }
+}
